@@ -1,0 +1,28 @@
+TLは表示しない、ツイートするだけのTwitterクライアントです。
+
+
+
+以下の設定をしてコンパイルして使います。
+■TweetController.h
+// XAuthを使うときは申請メールを送る必要がある(http://dev.twitter.com/pages/xauth)
+// アプリのスクリーンショットは、添付ファイルだと受け取ってもらえないので、アップロードしてリンクを記述する必要がある。
+#define kOAuthConsumerKey                @""
+#define kOAuthConsumerSecret             @""
+
+
+■TwitPic.h
+// Twitpic(http://dev.twitpic.com/)
+// 参考：(http://iphone.longearth.net/2010/08/05/twitpic%E3%81%AEoauthecho%E5%AF%BE%E5%BF%9C/)
+#define twitPicApiKey @""
+
+
+■Bitly.h
+// Bitly(http://bit.ly/)
+// 参考：http://www.netimpact.co.jp/blog/11618
+#define bitlyUserName @""
+#define bitlyApi      @""
+
+
+
+TODO:
+ロケーション情報を投稿できるようにする。
